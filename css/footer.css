@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Slab', serif;
+}
+
+/*--------- FOOTER ----------*/
+footer{
+    background-color: #7B8BE6;
+    height: 160px;
+    width: 100%;
+    color: #fff;
+}
+
+footer #endereco{
+    width: 80%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+#endereco a{
+    color: #fff;
+    text-decoration: none;
+    height: 23%;
+    text-align: center;
+}
+
+iframe{
+    float: right;
+}
+
+nav#redes_sociais{
+    width: 80%;
+    height: 35px;
+    display: table;
+    margin-top: 15px;
+    margin-left: 90px;
+}
+
+#facebook, #instagram, #linkedin, #twitter{
+    width: 25px;
+    height: 25px;
+    background-color: #7B8BE6;
+    margin: 5px auto;
+    display: table-cell;
+}
+
+nav#redes_sociais ul li{
+    list-style-type: none;
+}
+
+iframe#mapa{
+    width:20%; 
+    height: 160px;
+}
+
+
+/* Desenvolvido pelo Wagner */

@@ -1,0 +1,90 @@
+/*------- CONFIGURAÇOES GERAIS ------*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Slab', serif;
+}
+
+html{
+    font-family: arial, verdana, sans-serif;
+    font-size: 16px;
+    color: #000;
+}
+
+div#site{
+max-width: 1100px;
+min-width: 900px;
+margin: 0px auto;
+}
+
+/* ----------- CABEÇALHO -------------*/
+header{
+    background-color: #A1AFFF;
+    height: 110px;
+    margin: 0px auto;
+    width: 100%;
+}
+
+
+#logo {
+    width: 25%;
+    height: 100%;
+    background-color: #A1AFFF;
+    float: left;
+}
+
+#logotipo{
+    width: 100%;
+    height: 100%;
+}
+
+/*------- MENU DE NAVEGAÇAO --------*/
+nav#superior {
+    width: 75%;
+    height: 100%;
+    background-color: #A1AFFF;
+    margin: 0px auto;
+    display: inline-block;
+}
+
+nav#superior ul{
+    height: 100%;
+    display: table;
+}
+
+nav#superior ul li{
+    display: table-cell;
+    width: 26.7%;
+    height: 100%;
+    background-color: #A1AFFF;
+    margin: 0px auto;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.5s;
+}
+
+nav#superior ul li:hover{
+    border-top: 10px #E6CC7A solid;
+    border-bottom: 10px #E6CC7A solid;
+    /*background-color: #E6CC7A;*/
+    color: #000;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+nav#superior ul li a{
+    text-decoration: none;
+    color: #000;
+    
+}
+
+nav#superior ul li a:visited{
+    color: #000;
+}
+
+#validadores{
+    display: inline-block;
+    float: left;
+}
+
+/* Desenvolvido pelo Wagner */

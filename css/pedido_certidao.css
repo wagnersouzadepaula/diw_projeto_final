@@ -1,0 +1,285 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Slab', serif;
+}
+
+div#site{
+    width: 1100px;
+    height: 1900px;
+}
+
+#formulario{
+    background-color: #424F99;
+    color: #f5f5f5;
+    /*padding: 10px;*/
+    display: table;
+    width: 1100px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+fieldset{
+    margin: 20px 20px;
+    /*padding: 10px;*/
+    border-radius: 10px;
+    width: 1056px;
+}
+
+legend{
+    color: #E6CC7A;
+    font-size: 20px;
+    font-weight: bold;
+    color: #E6CC7A; 
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+
+
+p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#form_esquerdo{
+    text-align: justify-all;
+    display: table-cell;
+    height: 500px;
+    width: 520px;
+    vertical-align: top;
+    font-size: 20px;
+}
+
+#idnome{
+    height: 40px;
+    width: 350px;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+#cpf{
+    margin-right: 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 198px;
+}
+
+#rg{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 199px;
+}
+
+#fone{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 416px;
+}
+
+#email{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 438px;
+}
+
+#enderec0{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 412px;
+}
+
+#uf {
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 462px;
+}
+
+#nacionalidade{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 365px;
+}
+
+#relacao1, #relacao2{
+    display: inline-block;
+}
+
+#form_direito{
+    display: table-cell;
+    height: 500px;
+    width: 520px;
+    vertical-align: top;
+    text-align: justify-all;
+    font-size: 20px;
+}
+
+#prof{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 439px;
+}
+
+#serventia{
+width: 520px;
+}
+
+#server{
+    display: inline-block;
+    width: 90px
+}
+
+#serventiatd{
+    display: inline-block;
+    width: 250px;
+}
+
+#serventiapj{
+    display: inline-block;
+    width: 150px;
+}
+
+#emnome{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 401px;
+}
+
+#cpf_emnomede{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 255px;
+}
+
+#protocolo{
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 433px;
+}
+
+#obs{
+    height: 80px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 518px;
+}
+
+
+#botao{
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#E6CC7A;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+article p{
+    margin: 15px 0px;
+    padding: 0px 30px;
+}
+
+#valores{
+    border-top: 1px solid #E6CC7A;
+    padding: 0px;
+}
+
+article{
+    background-color: #424F99;
+    color: #f5f5f5;
+}
+
+article h2{
+    padding-top: 30px;
+    text-align: center;
+}
+
+#tabelas{
+    width: 1100px;
+    background-color: transparent;
+}
+
+#tabela{
+    display: inline-block;
+    text-align: center;
+    background-color: #7B8BE6;
+    color:#f5f5f5;
+}
+
+#tabela2{
+    display: inline-block;
+    text-align: left;
+    background-color: #7B8BE6;
+    color:#f5f5f5;
+}
+
+article #tabela{
+    margin-left: 140px;
+    box-shadow: 10px 10px 10px #000;
+}
+
+article #tabela2{
+
+    box-shadow: 10px 10px 10px #000;
+}
+
+#tabela .conteudo{
+    width:400px; 
+    height:230px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    text-align: left;
+}
+
+#tabela .conteudo thead tr{
+    background-color: #E6CC7A;
+    color: black;
+    text-align: left;
+}
+
+#tabela2 .conteudo{
+    width:400px; 
+    height:230px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 400px;
+    text-align: left;
+}
+
+#tabela2 .conteudo thead tr{
+    background-color: #E6CC7A;
+    color: black;
+    text-align: left;
+}
+
+.conteudo th,
+.conteudo td{
+    padding: 12px 15px;
+}
+
+.conteudo tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+p#ultimo_paragrafo{
+    margin-bottom: 0px;
+    padding: 30px;
+}

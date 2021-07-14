@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/geral_e_menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/pedido_certidao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF&P</title>
+</head>
+<body>
+    <div id="site">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" id="logotipo"></a>
+            </div>
+            <nav id="superior">
+                <ul>
+                    <li>
+                        <a href="emconstrucao.html">
+                            Filiais
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nossos_servicos.html">
+                            Nossos Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pedido_certidao.html">
+                            Pedido de Certidão
+                        </a>
+                    </li>
+                    <li>    
+                        <a href="emconstrucao.html">
+                            Tabela de Emolumentos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="formulario">
+            <h1>Faça aqui seu Pedido de Certidão</h1>
+            <!-- Tag FORM indica aonde inicia e termina a área do formulário -->
+            <form name="certidao" action="pedido_certidao.php" method="POST"> 
+            <fieldset>  
+                <legend>Pedido de Certidão</legend>
+            <div id="form_esquerdo">
+                <label for="idnome">Nome Completo</label>
+                <input type="text" name="nome" id="idnome">
+                <label for="cpf">CPF:</label>
+                <input type="password" id="cpf" inputmode="number" minlength="11" maxlength="11"
+                pattern="^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}" required autocomplete="off">
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" inputmode="number" minlength="10" maxlength="11">
+                <span>Telefone</span>
+                <input type="tel" name="fone" id="fone" placeholder="(xx) xxxxx-xxxx">
+                <span>Email</span>
+                <input type="email" name="
+                email" id="email" placeholder="exemplo@exemplo.com.br" required>
+                <span>Endereço</span>
+                <input type="text" placeholder="Rua, número, complemento, bairro, cidade" name="endereco" id="enderec0" required>
+                <span>UF:</span>
+                <select name="estado" id="uf">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                </select>
+                <span>Nacionalidade</span>
+                <input type="text" placeholder="(Ex: Brasileiro)" name="nacionalidade" id="nacionalidade" required>
+                <div>
+                    <span>Estado Civil:</span>
+                </div>
+                <div id="relacao1">
+                    <div>
+                        <input type="radio" name="estciv" id="solt" value="solt">
+                        <label for="solt">Solteiro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="estciv" id="cas" value="cas">
+                        <label for="cas">Casado</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="estciv" id="sep" value="sep">
+                        <label for="sep">Separado</label>
+                    </div>
+                </div>
+                <div id="relacao2">
+                    <div>
+                        <input type="radio" name="estciv" id="divor" value="divor">
+                        <label for="divor">Divorciado</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="estciv" id="viuvo" value="viuvo">
+                        <label for="viuvo">Viúvo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="estciv" id="uniao" value="uniao">
+                        <label for="uniao">União Estável</label>
+                    </div>
+                </div>
+            </div>
+            <div id="form_direito">
+                <span>Profissão</span>
+                <input type="text" name="prof" id="prof" required>
+                <div id="serventia">
+                    <div id="server">
+                        <span>Serventia: </span>
+                    </div>
+                    <div id="serventiatd">
+                        <input type="checkbox" name="tit" id="tit" value="1">
+                        <label for="tit">Títulos e Documentos</label>
+                    </div>
+                    <div id="serventiapj">
+                        <input type="checkbox" name="pesju" id="pesju" value="1">
+                        <label for="pesju">Pessoa Jurídica</label>
+                    </div>
+                </div>
+                <span>Em nome de:</span>
+                <input type="text" name="emnome" id="emnome" required>
+                <span>Inscrita no CPF/CNPJ sob o nº:</span>
+                <input type="text" name="cpf_emnomede" id="cpf_emnomede" required>
+                <span>Protocolo:</span>
+                <input type="text" name="protocolo" id="protocolo" required>
+                <span>Observações:</span>
+                <textarea name="obs" id="obs" cols="30" rows="5" maxlength="200"></textarea>
+                <div><span>Tipo de Certidão:</span></div>
+                <div>
+                    <input type="radio" name="tipo_certidao" id="neg" value="neg">
+                    <label for="neg">Negativa de Denominação</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo_certidao" id="int" value="int">
+                    <label for="int">Inteiro Teor</label>
+                </div>
+                <div>
+                    <input type="radio" name="tipo_certidao" id="somente_prot" value="somente_prot">
+                    <label for="somente_prot">Somente do Protocolo</label>
+                    <span>:</span>
+                    <input type="text" name="num_protocolo" id="num_protocolo">
+                </div>
+                <div>
+                    <input type="radio" name="tipo_certidao" id="negativa2" value="negativasimples">
+                    <label for="negativa2">Negativa</label>
+                </div>
+            </div>
+              </fieldset>
+              <input id="botao" type="submit" name="btnEnviar" value="Enviar">
+            </form>
+        </div>
+        <div id="valores">
+            <article>
+                <h2>Valores das certidões</h2>
+                <p>Os valores das certidões variam de acordo com a quantidade de documentos registrados.</p>
+                <p>As certidões negativas e as certidões de protocolo são do tipo "breve relatório", com todas as informações obrigatórias para comprovação de um registro.</p>
+                <p> Alguns órgãos solicitam para situações específicas a apresentação de uma certidão do tipo "inteiro teor", que é a cópia fiel documento digitalizado no assento registrado em cartório.</p>
+                <p>O prazo para emissão de uma certidão conforme previsão legal é de 5 dias úteis. Cabe lembrá-lo que esse prazo COMEÇA A CONTAR APÓS a confirmação do pagamento. Entretanto, nosso escritório normalmente finaliza o processo antes. Sinta-se à vontade para nos contatar e verificar o andamento de sua solicitação.</p>
+                <p>Abaixo consta uma tabela do custo de emissão de certidão conforme a quantidade de folhas.</p>
+                <div id="tabelas">
+                    <div id="tabela">
+                        <table class="conteudo">
+                            <thead>
+                                <tr>
+                                    <th>Qtde de<br>Folhas</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>01</td>
+                                <td>R$30,40</td>
+                            </tr>
+                            <tr>
+                                <td>02</td>
+                                <td>R$41,60</td>
+                            </tr>
+                            <tr>
+                                <td>03</td>
+                                <td>R$51,78</td>
+                            </tr>
+                            <tr>
+                                <td>04</td>
+                                <td>R$62,56</td>
+                            </tr>
+                            <tr>
+                                <td>05</td>
+                                <td>R$72,75</td>
+                            </tr>
+                            <tr>
+                                <td>06</td>
+                                <td>R$82,94</td>
+                            </tr>
+                            <tr>
+                                <td>07</td>
+                                <td>R$93,12</td>
+                            </tr>
+                            <tr>
+                                <td>08</td>
+                                <td>R$103,30</td>
+                            </tr>
+                            <tr>
+                                <td>09</td>
+                                <td>R$113,49</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>R$123,68</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="tabela2">
+                        <table class="conteudo">
+                            <thead>
+                                <tr>
+                                    <th>Qtde de<br>Folhas</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>11</td>
+                                <td>R$133,86</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>R$144,04</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>R$154,23</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>R$164,42</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>R$174,60</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>R$187,78</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>R$194,97</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>R$205,16</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>R$215,34</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>R$225,52</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <p id="ultimo_paragrafo">Favor entrar em contato por telefone, WhatsApp ou email para certidões de número de folhas superiores a 20.</p>
+            </article>
+        </div>
+        <footer>
+            <div id="endereco">
+                <address>Endereço: Av. Borges de Medeiros, 5000. <br>Praia de Belas, Porto Alegre, RS. CEP: 90.110-001.</address>
+                Telefone: 
+                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5551992563900" target="_blank"> 
+                    <i class="fa">&#xf232;</i> 
+                    (51)99256-3900
+                </a><br>
+                Estamos abertos das 09:00 às 16:00 - Segunda à Sexta-Feira.
+            </div>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13814.202397030851!2d-51.23242756583863!3d-30.049748224498178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978faf72b818f%3A0x6e32ee3a388b38a0!2sPraia%20de%20Belas%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1624146761945!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <nav id=redes_sociais>
+                <ul id="facebook">
+                    <li class="redes">
+                        <a href="https://www.facebook.com/wagner.s.paula/" target="_blank">
+                            <img src="img/facebook.png" alt="logo do facebook" >
+                        </a>
+                    </li>
+                </ul>
+                <ul id="instagram">
+                    <li class="redes">
+                        <a href="https://www.instagram.com/wagnerspaula/" target="_blank">
+                            <img src="img/instagram.png" alt="logo do instagram">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="linkedin">
+                    <li class="redes">
+                        <a href="https://www.linkedin.com/in/wagner-s-paula-815b6892/" target="_blank">
+                            <img src="img/linkedin.png" alt="logo do linkedin">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="twitter">
+                    <li class="redes">
+                        <a href="https://twitter.com/twitter" target="_blank">
+                            <img src="img/twitter.png" alt="logo do twitter">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <p id="validadores">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS válido!"/>
+        </a>
+    </p>
+</body>

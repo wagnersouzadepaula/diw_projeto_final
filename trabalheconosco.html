@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/geral_e_menu.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/trabalheconosco.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF&P</title>
+</head>
+<body>
+    <div id="site">
+        <header>
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt="logo" id="logotipo"></a>
+            </div>
+            <nav id="superior">
+                <ul>
+                    <li>
+                        <a href="emconstrucao.html">
+                            Filiais
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nossos_servicos.html">
+                            Nossos Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pedido_certidao.html">
+                            Pedido de Certidão
+                        </a>
+                    </li>
+                    <li>    
+                        <a href="emconstrucao.html">
+                            Tabela de Emolumentos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="formulário">
+            <h1>
+                Escritório Monteiro, Fernandes & de Paula
+            </h1>
+
+            <p>Deixe aqui seus dados para ser chamado em processos seletivos</p>
+            <!-- Tag FORM indica aonde inicia e termina a área do formulário -->
+            <form name="cadastro" action="recebecurriculovitae.php" method="POST"> 
+              <!-- Elemento para separação visual de componentes-->
+              <fieldset>
+                <!-- Define a legenda do fieldset -->
+                <legend>Dados Pessoais</legend>
+                
+                <!-- Inserção de texto simples em uma linha -->
+                <label for="idnome">Nome Completo</label>
+
+                <input type="text" name="nome" id="idnome">
+                <!-- Oculta os caracteres do campo -->
+                
+                <div id="div_genero">
+                    <div id="span_gener0"><span>Gênero:</span></div>
+                    
+                    <div id="div_masculino">
+                        <input type="radio" name="gender" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    
+                    <div id="div_feminino">
+                        <input type="radio" name="gender" id="feminino" value="feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    
+                    <div id="div_genero_outro">
+                        <input type="radio" name="gender" id="outro" value="outro">
+                        <label for="outro">Outro</label>
+                    </div>
+                    
+                    <div id="div_pnr">
+                        <input type="radio" name="gender" id="pnr" value="pnr">
+                        <label for="pnr">Prefiro não responder</label>
+                    </div>
+                </div>
+                
+                <div id="divnascimento">
+                    <span>Data de Nascimento</span>
+                    <input type="date" name="date" id="data_nascimento">
+                </div>
+                
+                <span>Email</span>
+                <input type="text" name="
+                email" id="email" placeholder="exemplo@exemplo.com.br" required>
+                
+                <span>Endereço</span>
+                
+                <input type="text" placeholder="Rua, número, complemento, bairro" name="endereco" id="enderec0" required>
+                
+                <label for="cidade">Selecione sua cidade</label>
+                <select name="cidade" id="cidade">
+                  <optgroup label="Rio Grande do Sul">
+                    <option value="poa">Porto Alegre</option>
+                    <option value="cach">Cachoeirinha</option>
+                    <option value="gra">Gravataí</option>
+                    <option value="alv">Alvorada</option>
+                    <option value="can">Canoas</option>
+                    <option value="est">Esteio</option>
+                    <option value="spc">Sapucaia</option>
+                    <option value="sl">São Leopoldo</option>
+                    <option value="nh">Novo Hamburgo</option>
+                    <option value="vmo">Viamão</option>
+                    <option value="other">Outro(a)</option>
+                  </optgroup>
+                </select>
+                
+                <span>Outra, qual?</span>
+                <input type="text" name="outra" id="outra" placeholder="Digite aqui o nome da Cidade">
+                
+                <span>Telefone</span>
+                <input type="tel" name="fone" id="fone" placeholder="(xx) xxxxx-xxxx">
+                
+              </fieldset>
+              <fieldset>
+                <legend>Dados Profissionais</legend>
+                
+                <!-- Span é um elemento textual sem relevância semantica -->
+                <div id="esquerda">
+                    <span>Quer se candidatar para vaga de: </span>
+                    
+                    <div>
+                        <input type="checkbox" name="escreventesubs" id="escreventesubs" value="1">
+                        <label for="escreventesubs">Escrevente Substituto</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="escreventeaut" id="escreventeaut" value="1">
+                        <label for="escreventeaut">Escrevente Autorizado</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="notificador" id="notificador" value="1">
+                        <label for="notificador">Notificador</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="escrevente" id="escrevente" value="1">
+                        <label for="escrevente">Escrevente</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="atendente" id="atendente" value="1">
+                        <label for="atendente">Atendente</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="auxcto" id="auxcto" value="1">
+                        <label for="auxcto">Auxiliar de Cartório</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="seguranca" id="seguranca" value="1">
+                        <label for="seguranca">Segurança</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" name="sg" id="sg" value="1">
+                        <label for="sg">Serviços Gerais</label>
+                    </div>
+                </div>
+                
+                <div id="direita">
+                    <div>
+                        <span>Formação</span>
+                        
+                        <input list="formacao" id="forma"/>
+                        <datalist id="formacao">
+                          <option value="Ensino Fundamental">
+                          <option value="Ensino Médio">
+                          <option value="Médio/Técnico">
+                          <option value="Ensino Superior">
+                          <option value="Especialização">
+                          <option value="Mestrado">
+                          <option value="Doutorado">
+                        </datalist>
+                    </div>
+                    
+                    <span>Resumo do Perfil</span>
+                    
+                    <textarea name="historico" id="historico" placeholder="Escreva um resumo sobre você" cols="30" rows="5" maxlength="200"></textarea>
+                    
+                    <div id="upload_cv">
+                        <span>Upload de Currículo Vitae:</span>
+                        
+                        <input type="file" name="curriculo" id="cv">
+                    </div>
+                    
+                    <div id="disponibilidade">
+                        <span>Disponibilidade de horas semanais</span>
+                        
+                        <input type="radio" name="horas" id="10" value="10">
+                        <label for="10">10 Horas</label>
+                        
+                        <input type="radio" name="horas" id="20" value="20">
+                        <label for="20">20 Horas</label>
+                        
+                        <input type="radio" name="horas" id="30" value="30">
+                        <label for="30">30 Horas</label>
+                        
+                        <input type="radio" name="horas" id="40" value="40">
+                        <label for="40">40 Horas</label>
+                    </div>
+                </div>
+                
+              </fieldset>
+              <fieldset>
+                <legend>Agendamento de Entrevista</legend>
+                <span>Data</span>
+                <input type="date" name="data" id="data_entrevista" required>
+                
+                <span>Horário</span>
+                <input type="time" id="horario" name="horario" min="08:00" max="18:00" required>
+                <small>Horário Comercial (08:00 as 18:00)</small>
+              </fieldset>
+              <input id="botao" type="submit" name="btnEnviar" value="Enviar">
+            </form>
+        </div>
+        <footer>
+            <div id="endereco">
+                <address>Endereço: Av. Borges de Medeiros, 5000. <br>Praia de Belas, Porto Alegre, RS. CEP: 90.110-001.</address>
+                Telefone: 
+                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5551992563900" target="_blank"> 
+                    <i class="fa">&#xf232;</i> 
+                    (51)99256-3900
+                </a><br>
+                Estamos abertos das 09:00 às 16:00 - Segunda à Sexta-Feira.
+            </div>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13814.202397030851!2d-51.23242756583863!3d-30.049748224498178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978faf72b818f%3A0x6e32ee3a388b38a0!2sPraia%20de%20Belas%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1624146761945!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <nav id=redes_sociais>
+                <ul id="facebook">
+                    <li class="redes">
+                        <a href="https://www.facebook.com/wagner.s.paula/" target="_blank">
+                            <img src="img/facebook.png" alt="logo do facebook" >
+                        </a>
+                    </li>
+                </ul>
+                <ul id="instagram">
+                    <li class="redes">
+                        <a href="https://www.instagram.com/wagnerspaula/" target="_blank">
+                            <img src="img/instagram.png" alt="logo do instagram">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="linkedin">
+                    <li class="redes">
+                        <a href="https://www.linkedin.com/in/wagner-s-paula-815b6892/" target="_blank">
+                            <img src="img/linkedin.png" alt="logo do linkedin">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="twitter">
+                    <li class="redes">
+                        <a href="https://twitter.com/twitter" target="_blank">
+                            <img src="img/twitter.png" alt="logo do twitter">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <p id="validadores">
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="CSS válido!" />
+            </a>
+    </p>
+</body>

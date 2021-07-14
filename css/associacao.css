@@ -1,0 +1,239 @@
+/*------- CONFIGURAÇOES GERAIS ------*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Slab', serif;
+}
+
+html{
+    font-size: 16px;
+    color: #000;
+}
+
+div#site{
+width: 900px;
+margin: 0px auto;
+}
+
+/* ----------- CABEÇALHO -------------*/
+header{
+    background-color: #424F99;
+    height: 110px;
+    margin: 0px auto;
+    width: 900px;
+}
+
+
+/*--------- MAIN ----------*/
+#principal{
+    background-color: #424F99;
+    width: 100%;
+    height: 4800px;
+}
+
+main{
+    width: 900px;
+    color: whitesmoke;
+    height: 100%;
+}
+
+main div{
+    width: 900px;
+    height: 00px;
+}
+
+figure{
+    height: 150px;
+    width: 150px;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+figure img{
+    margin-top: 20px;
+    box-shadow: #000 10px 10px 10px ;
+    border-radius: 50%;
+}
+
+
+h1{
+    text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    text-shadow: 10px 10px 10px #000;
+}
+
+main div p{
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+li.rol_documentos{
+    margin-left: 200px;
+}
+
+a.voltar, ol li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+
+a.voltar, ol li a:visited {
+    color: #f5f5f5;
+}
+
+a.voltar:hover, ol li a:hover{
+    font-weight: bolder;
+    text-shadow: 5px 5px 5px #000;
+}
+
+div.linkvoltar{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+article#requer{
+    height: 690px;
+}
+
+article.ata{
+    height: 690px;
+}
+
+article.diretoria{
+    height: 690px;
+}
+
+article.fundadores{
+    height: 690px;
+}
+
+article.estatuto{
+    height: 690px;
+}
+
+
+
+h2{
+    text-align: center;
+    margin-top: 30px ;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-shadow: 5px 5px 5px #000;
+}
+
+article p{
+    padding-bottom: 0px;
+}
+
+ol, ol li {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+div.download{
+    height: 110px;
+    width: 110px;
+    margin: 0px auto;
+    background-color: #f5f5f5;
+    border: #E6CC7A 5px solid;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+div.download:hover{
+    background-color: #E6CC7A;
+    border: #f5f5f5 5px solid;
+    font-weight: 700;
+}
+
+div.icon{
+    height: 30px;
+    width: 30px;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+.icon a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+
+}
+
+.texto_download{
+    margin: 10px auto;
+    text-align: center;
+    width: 71.16px;
+    height: 53px;
+    text-decoration: none;
+    color: #000;
+}
+
+a:visited{
+    color: #f5f5f5;
+}
+
+div.multimidia{
+    height: 400px;
+    width: 900px;
+}
+
+.conteudo {
+    width:560px;
+    height:315px;
+    border:4px solid #999;
+    background:transparent;
+}
+
+.mold1{
+    width:568px;
+    height:323px;
+    border:15px #E6CC7A inset;
+    background:transparent;
+}
+
+.mold2 {
+    margin: 0 auto;
+    height: 353px;
+    width: 598px; 
+    border:25px solid #f5f5f5;
+    padding: 5px;
+    background: #b1b1c3;
+    border-radius: 3%;
+}
+
+iframe#dbev{
+    width:560px;
+    height:315px;
+}
+
+
+/*--------- FOOTER ----------*/
+footer{
+    background-color: #7B8BE6;
+    height: 160px;
+    width: 900px;
+    color: #fff;
+}
+
+footer #autor{
+    width: 900px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#autor a{
+    color: #fff;
+    text-decoration: none;
+    height: 23%;
+    text-align: center;
+}
+
+/* desenvolvido por Wagner*/

@@ -1,0 +1,176 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Slab', serif;
+}
+
+div#site{
+    width: 1100px;
+    height: 1350px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    text-shadow: 10px 10px 10px #000;
+    text-align: center;
+}
+
+#formulário{
+    background-color: #424F99;
+    color: white;
+    font-size: 20px;
+}
+
+
+fieldset{
+    margin: 20px;
+    border-radius: 10px;
+    width: 1060px;
+    font-size: 20px;
+
+}
+
+legend{
+    color: #E6CC7A;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top:10px;
+    text-align: center;
+}
+
+#idnome{
+    width: 900px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+div#div_genero{
+    margin: 0px auto;
+    display: table;
+    margin-bottom: 20px;
+}
+
+#span_gener0,#div_masculino, #div_feminino, #div_genero_outro {
+    display: table-cell;
+    width: 170px;
+}
+
+#div_pnr{
+    display: table-cell;
+    width: 200px;
+
+}
+
+#divnascimento{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#data_nascimento{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#email{
+    width: 599px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#enderec0{
+    width: 599px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#cidade{
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#outra{
+    width: 443px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#fone{
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#esquerda{
+    display: inline-block;
+    width: 400px;
+    float: left;
+}
+
+#forma{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#historico{
+    height: 90px;
+    width: 650px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#upload_cv{
+    width: 600px;
+}
+
+#cv{
+    height: 40px;
+    width: 500px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#disponibilidade{
+    margin-bottom: 20px;
+}
+
+#data_entrevista{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#horario{
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#botao{
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:#E6CC7A;
+    border-radius: 10px;
+}
+
+p{
+    text-align: center;
+}
+
